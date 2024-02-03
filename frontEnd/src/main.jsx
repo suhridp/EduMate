@@ -7,21 +7,26 @@ import Layout from "./Layout.jsx";
 import Aboutus from "./Aboutus.jsx";
 import Profile from "./Profile.jsx";
 import Notes from "./Notes.jsx";
+import Register from "./Register.jsx";
+import Login from "./Login.jsx";
 import {
   Route,
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import Schedule from "./Schedule.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="" element={<Home />} />
-      <Route path="about" element={<Aboutus />} />
+      <Route path="home" element={<Home />} />
+      <Route path="aboutus" element={<Aboutus />} />
       <Route path="profile" element={<Profile />} />
-
+      <Route path="schedule" element={<Schedule />} />
       <Route path="notes" element={<Notes />} />
+      <Route path="register" element={<Register />} />
+      <Route path="login" element={<Login />} />
     </Route>
   )
 );
