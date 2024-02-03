@@ -6,8 +6,13 @@ dotenv.config({
     path: './.env'
 })
 
+app.get("/",(req,res)=>{
+    res.send('server is ready'); 
+})
 
-
+app.get("/users/register",(req,res)=>{
+    res.send('server is ready'); 
+})
 connectDB()
 .then(() => {
     app.listen(process.env.PORT || 8000, () => {
