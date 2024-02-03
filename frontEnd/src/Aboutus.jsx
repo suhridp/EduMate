@@ -7,7 +7,7 @@ function Aboutus() {
       <>
         <div>
           <div className="text-center">
-            <h1 className="text-2xl m-4 font-bold tracking-tight text-gray-900 sm:text-3xl">
+            <h1 className="text-2xl m-4 font-bold tracking-tight text-gray-900 pt-4 sm:text-3xl">
               Welcome to Edumate - Your Ultimate Study Companion
             </h1>
             <p className="mt-6 text-lg leading-8 m-20 text-gray-600">
@@ -19,7 +19,7 @@ function Aboutus() {
           </div>
         </div>
         <div className="flex  flex-wrap gap-5  justify-center ">
-          <div className="rounded w-2/5 p-4 m-4 bg-gradient-to-b from-blue-400 to-blue-50 mx-2">
+          <div className="rounded w-2/5 p-8 m-4 bg-gradient-to-b from-blue-400 to-blue-50 mx-2">
             <h1 className="text-xl p-4 font-bold">Key Feature</h1>
             <div className="my-2">
               <span className="font-bold">1. Assignment Management: </span>
@@ -42,7 +42,7 @@ function Aboutus() {
               textbooks and reading materials with just a few clicks.
             </div>
           </div>
-          <div className="rounded w-2/5 p-4 m-4 bg-gradient-to-b from-blue-400 to-blue-50 mx-2">
+          <div className="rounded w-2/5 p-8 m-4 bg-gradient-to-b from-blue-400 to-blue-50 mx-2">
             <h1 className="text-xl p-4 font-bold">Why to choose EduMate?</h1>
             <div className="my-2">
               <span className="font-bold">Simplicity :</span>Edumate simplifies
@@ -50,11 +50,11 @@ function Aboutus() {
               your education.
             </div>
             <div className="my-2">
-              <span className="font-bold">Efficiency </span> Save time and
+              <span className="font-bold">Efficiency : </span> Save time and
               energy with our user-friendly interface and time-saving features.
             </div>
             <div className="my-2">
-              <span className="font-bold"> Success: </span>
+              <span className="font-bold"> Success : </span>
               Join a community of successful students who rely on Edumate to
               excel in their studies.
             </div>

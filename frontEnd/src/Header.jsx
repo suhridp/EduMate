@@ -4,17 +4,20 @@ import { Link, NavLink } from "react-router-dom";
 export default function Header() {
   return (
     <header className="shadow z-50 top-0">
-      <nav className=" bg-gradient-to-b from-indigo-200 to-slate-100 border-gray-200 px-4 lg:px-6 py-2.5">
+      <nav className=" bg-gradient-to-b from-blue-300 to-slate-100 border-gray-200 px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link to="/" className="flex items-center">
-            <span className="font-bold text-2xl hover:bg-indigo-600 p-3 rounded hover:text-green-50">
-              EduMate
+          <Link to="/home" className="flex hover:scale-105 items-center">
+            <span className="text-5xl rotate-345  font-bold text-transparent bg-clip-text bg-gradient-to-b hover:ease-in-out from-blue-700 to-red-700:">
+              E
+            </span>
+            <span className="font-bold text-3xl  text--700 hover:ease-in-out	 hover:tex px-1 py-3 rounded hover:text-indigo-600">
+              duMate
             </span>
           </Link>
           <div className="flex items-center lg:order-2">
             <Link
               to="/register"
-              className="flex flex-nowrap text-gray-800 hover:bg-gray-700 hover:text-blue-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-2 py-2 lg:py-2.5 mr-2 focus:outline-none"
+              className="flex flex-nowrap text-gray-800  hover:scale-105 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-2 py-2 lg:py-2.5 mr-2 focus:outline-none"
             >
               Log in
               <svg
@@ -42,7 +45,7 @@ export default function Header() {
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
                 <NavLink
-                  to="/"
+                  to="/home"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                   }
@@ -57,7 +60,7 @@ export default function Header() {
                     `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                   }
                 >
-                  About US
+                  About Us
                 </NavLink>
               </li>
               <li>
