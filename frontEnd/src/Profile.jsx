@@ -110,9 +110,7 @@ function Profile() {
       </div>
     </div>
   );
-=======
-    <div className=' bg-gradient-to-b from-blue-600 to-slate-50'>Profile</div>
-  )
+
 
 }
 
