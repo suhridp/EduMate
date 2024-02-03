@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 export default function Header() {
   return (
     <header className="shadow z-50 top-0">
-      <nav className=" bg-gradient-to-b from-blue-300 to-slate-100 border-gray-200 px-4 lg:px-6 py-2.5">
+      <nav className=" bg-gradient-to-t from-blue-300 to-slate-100 border-gray-200 px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/home" className="flex hover:scale-105 items-center">
             <span className="text-5xl rotate-345  font-bold text-transparent bg-clip-text bg-gradient-to-b hover:ease-in-out from-blue-700 to-red-700:">

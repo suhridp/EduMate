@@ -17,6 +17,7 @@ function Profile() {
   const [marks, setMarks] = useState("90");
   const [date, setDate] = useState("12.01.2023");
   return (
+
     <div className="text-center">
       <span className="text-center">Profile</span>
       <div className="flex justify-evenly h-3/4">
@@ -109,6 +110,10 @@ function Profile() {
       </div>
     </div>
   );
+=======
+    <div className=' bg-gradient-to-b from-blue-600 to-slate-50'>Profile</div>
+  )
+
 }
 
 export default Profile;
