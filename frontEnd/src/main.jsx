@@ -7,6 +7,8 @@ import Layout from "./Layout.jsx";
 import Aboutus from "./Aboutus.jsx";
 import Profile from "./Profile.jsx";
 import Notes from "./Notes.jsx";
+import Register from "./Register.jsx";
+import Login from "./Login.jsx";
 import {
   Route,
   RouterProvider,
@@ -23,6 +25,8 @@ const router = createBrowserRouter(
       <Route path="profile" element={<Profile />} />
       <Route path="schedule" element={<Schedule />} />
       <Route path="notes" element={<Notes />} />
+      <Route path="register" element={<Register />} />
+      <Route path="login" element={<Login />} />
     </Route>
   )
 );

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Profile() {
   return (
-    <div>Profile</div>
+    <div className=' bg-gradient-to-b from-blue-600 to-slate-50'>Profile</div>
   )
 }
 

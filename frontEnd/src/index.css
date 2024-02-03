@@ -5,4 +5,5 @@
 @tailwind utilities;
 * {
   font-family: Merienda;
+  /* border: 0.1rem solid black; */
 }
