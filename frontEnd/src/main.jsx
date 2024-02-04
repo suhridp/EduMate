@@ -15,7 +15,6 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import Schedule from "./Schedule.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,7 +22,8 @@ const router = createBrowserRouter(
       <Route path="home" element={<Home />} />
       <Route path="aboutus" element={<Aboutus />} />
       <Route path="profile" element={<Profile />} />
-      <Route path="schedule" element={<Schedule />} />
+
+      {/* <Route path="schedule" element={<Schedule />} /> */}
       <Route path="notes" element={<Notes />} />
       <Route path="register" element={<Register />} />
       <Route path="login" element={<Login />} />

@@ -1,0 +1,22 @@
+/* Add your custom styles for the Register component here */
+
+/* Example: Adjusting spacing on smaller screens */
+@media (max-width: 640px) {
+  .flex-col {
+    padding: 8px;
+  }
+}
+
+/* Example: Adjusting spacing on larger screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .flex-col {
+    padding: 16px;
+  }
+}
+
+/* Example: Adjusting spacing on extra-large screens */
+@media (min-width: 1025px) {
+  .flex-col {
+    padding: 20px;
+  }
+}
