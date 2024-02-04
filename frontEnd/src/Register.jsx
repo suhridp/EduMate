@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+
 import "./Styles//Register.css";
 
 const Register = () => {
@@ -33,13 +34,13 @@ const Register = () => {
       } else if (response.data === "notexist") {
         alert("Registration successful");
         // Redirect or handle success as needed
+        
       }
     } catch (error) {
       console.error("Error during registration:", error);
       // alert("Something went wrong");
     }
   };
-
   return (
     <>
       <div className="flex flex-col sm:flex-row p-10 justify-center bg-gradient-to-b from-blue-500 to-slate-50 text-center items-center bg-slate-100 ">
@@ -68,7 +69,7 @@ const Register = () => {
                 size="10"
                 className="rounded mx-3"
                 onChange={handleChange}
-                required
+                // required
               />
             </span>
             <span className="m-1">
@@ -83,7 +84,7 @@ const Register = () => {
                 size="10"
                 className="rounded mx-3"
                 onChange={handleChange}
-                required
+                // required
               />
             </span>
 
@@ -99,7 +100,7 @@ const Register = () => {
                 size="10"
                 className=" rounded"
                 onChange={handleChange}
-                required
+                // required
               />
             </span>
             <span className="m-1">
@@ -114,7 +115,7 @@ const Register = () => {
                 size="10"
                 className="rounded mx-3"
                 onChange={handleChange}
-                required
+                // required
               />
             </span>
 
@@ -130,7 +131,7 @@ const Register = () => {
                 size="10"
                 className="rounded mx-3"
                 onChange={handleChange}
-                required
+                // required
               />
             </span>
             <button

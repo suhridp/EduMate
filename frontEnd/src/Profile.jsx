@@ -21,17 +21,15 @@ function Profile() {
       <div className="flex flex-col  items-center md:flex-row justify-evenly h-3/4">
         <div className="flex flex-col mb-4 justify-evenly border-4 p-10 w-5/6 md:w-2/6">
           <div className="flex flex-col items-center justify-center">
-            <img
-              src="homepageImage.png"
-              className="w-1/2 md:w-1/5 rounded-xl border-gray-700"
-              alt="profile pic"
-            />
+            <div className="w-1/2 md:w-1/5 rounded-xl border-gray-700">
+              <img src="homepageImage.png" alt="profile pic" />
+            </div>
             <div className="flex my-8 justify-evenly flex-col">
-              <span>{name}</span>
+              <span>Name: {name}</span>
               <span>
-                {college}, {collegelocation}
+                College :{college}, {collegelocation}
               </span>
-              <span>Joined on {date}</span>
+              <span>Joined on: {date}</span>
             </div>
           </div>
 

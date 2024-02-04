@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-
+  const [isLoggedin, setLoggedin] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
@@ -16,7 +16,7 @@ function Header() {
             <span className="text-5xl rotate-345  font-bold text-transparent bg-clip-text bg-gradient-to-b hover:ease-in-out from-blue-700 to-red-700:">
               E
             </span>
-            <span className="font-bold text-3xl  text--700 hover:ease-in-out	 hover:tex px-1 py-3 rounded hover:text-indigo-600">
+            <span className="font-bold text-3xl  text--700 hover:ease-in-out   hover:tex px-1 py-3 rounded hover:text-indigo-600">
               duMate
             </span>
           </Link>
@@ -92,7 +92,7 @@ function Header() {
                   to="/schedule"
                   onClick={toggleMenu}
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
+                    ` ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                   }
                 >
                   Schedule
@@ -103,9 +103,10 @@ function Header() {
                   to="/profile"
                   onClick={toggleMenu}
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
+                    ` ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                   }
                 >
+                  {/* block py-2 pr-4 pl-3 duration-200 */}
                   Profile
                 </NavLink>
               </li>
@@ -114,7 +115,7 @@ function Header() {
                   to="/notes"
                   onClick={toggleMenu}
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
+                    ` ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                   }
                 >
                   Notes
@@ -124,8 +125,11 @@ function Header() {
           </div>
           <div className="hidden lg:flex items-center lg:order-2">
             <Link
-              to="/login"
-              className="text-gray-800 hover:scale-105 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-2 py-2 lg:py-2.5 mr-2 focus:outline-none"
+              to="/register"
+              onClick={(e) => setLoggedin(!e)}
+              className={({ isLoggedin }) =>
+                `${isLoggedin ? hidden : "text-gray-800 hover:scale-105 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-2 py-2 lg:py-2.5 mr-2 focus:outline-none"}`
+              }
             >
               Log in
               <svg
