@@ -79,6 +79,7 @@ const registerUser = asyncHandler( async (req, res) => {
         // coverImage: coverImage?.url || "",
         email, 
         password,
+        // mobile,
         username: username.toLowerCase()
     })
 
