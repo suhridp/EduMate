@@ -1,5 +1,8 @@
 /* Add your custom styles for the Register component here */
-
+label {
+  text-align: start;
+  margin-left: 1em;
+}
 /* Example: Adjusting spacing on smaller screens */
 @media (max-width: 640px) {
   .flex-col {
