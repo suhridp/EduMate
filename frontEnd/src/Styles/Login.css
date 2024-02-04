@@ -1,0 +1,30 @@
+/* Add this CSS to make the page responsive */
+@media (max-width: 640px) {
+  .flex-col {
+    p: 8;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .flex-col {
+    p: 12;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .flex-col {
+    p: 16;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .flex-col {
+    p: 20;
+  }
+}
+
+@media (min-width: 1281px) {
+  .flex-col {
+    p: 20;
+  }
+}
