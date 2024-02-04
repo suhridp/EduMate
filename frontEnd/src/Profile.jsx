@@ -8,7 +8,6 @@ function Profile() {
     "United States of America"
   );
   const [email, setEmail] = useState("abc@gmail.com");
-
   const [phone, setPhone] = useState("+915000255");
   const [department, setDepartment] = useState("Datascience");
   const [year, setYear] = useState("2nd");
